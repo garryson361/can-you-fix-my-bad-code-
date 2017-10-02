@@ -39,7 +39,7 @@ function draw() {
   gameover = true
   }
   for(var i = 0; i < length; i++){
-    rect(snakeX * i - 15,snakeY,15,15)
+    rect(snakeX + i * 15,snakeY,15,15)
   }
   if(snakeX == foodX && snakeY == foodY){
     thing = thing - 15
